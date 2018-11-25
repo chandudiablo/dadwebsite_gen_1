@@ -26,21 +26,26 @@ $(document).ready(function(){
     });
 
     $(document).on("click", "#close-x", function () {
+        $("#screenblocker").toggleClass("dis-none");
         $("#privacy-policy").toggleClass("dis-none");
     });
 
     $(document).on("click", "#privacy-policy-link", function () {
+        $("#screenblocker").toggleClass("dis-none");
         $("#privacy-policy").toggleClass("dis-none");
     });
 
     $(document).on("click", "#close-x-enquire-dialog", function () {
+        $("#screenblocker").toggleClass("dis-none");
         $("#enquire-now-dialog").toggleClass("dis-none");
     });
 
     $(document).on("click", ".enquire-button", function () {
+        $("#screenblocker").toggleClass("dis-none");
         $("#enquire-now-dialog").toggleClass("dis-none");
     });
     $(document).on("click", "#enquire-fixed", function () {
+        $("#screenblocker").toggleClass("dis-none");
         $("#enquire-now-dialog").toggleClass("dis-none");
     });
 
@@ -76,9 +81,9 @@ $(document).ready(function(){
         contentdiv.addClass("dis-none");
     });
 
-    $(document).on("click", "#contact-us-nav", function () {
+    /*$(document).on("click", "#contact-us-nav", function () {
         $("#enquire-now-dialog").toggleClass("dis-none");
-    });
+    });*/
 
 
 });

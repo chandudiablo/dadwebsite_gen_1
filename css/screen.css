@@ -1,5 +1,5 @@
 /* CSS Document for Screens */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
 
 body {
     /*background: url(../images/background-cover.jpg) repeat;*/
@@ -11,7 +11,7 @@ body {
     padding: 0;
 }
 
-#page { max-width: 1200px; margin: 0 auto; position: relative; }
+#page {  margin: 0 auto; position: relative; }
 
 /* Basic Text Styles */
 
@@ -30,11 +30,19 @@ a:hover {
 a:visited { color: #65b1ff; }
 
 a.btn {
-    font-size: 1.2em; text-decoration: none; border: 1px solid lightblue; padding: 4px 15px;
     transition: background-color .3s;
+    background: #191919;
+    padding: 12px 30px;
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
 }
 a.btn:hover {
-    background-color: rgba(0,0,0,.1);
+    //background-color: rgba(0,0,0,.1);
 
 }
 
@@ -51,12 +59,12 @@ header { height: 86px;
 }
 
 header div.commodo-logo {
-    position:absolute; left: 322px; top: 4px; height: 59px; width: 113px;
+    position:absolute; left: 340px; top: 4px; height: 59px; width: 113px;
 }
 
 header a.logo{ position: absolute; display: block; width: 40px; height: 40px;
     background: url(../images/ci.png) no-repeat 0 0; background-size: contain;
-    top: 15px; left: 20px;
+    top: 18px; left: 20px;
 }
 .header-row a.logo{
     position: absolute; display: block; width: 27px; height: 27px;
@@ -65,7 +73,7 @@ header a.logo{ position: absolute; display: block; width: 40px; height: 40px;
 }
 
 header div.brand-name {
-    position:absolute; left: 70px; top: 10px;
+    position:absolute; left: 70px; top: 14px;
 }
 
 header div.brand-name span.website-name {
@@ -134,35 +142,63 @@ section::after {
 /* ad-types-section */
 
 section.ad-types-section {
-    background-color: #eee9d9;
-    padding-bottom: 30px;
-    padding-top: 30px;
+    background-color: #eee;
+    padding: 150px 50px 30px 50px;
 }
 
 section.ad-types-section aside { width: 33%; float: left; text-align: center; }
 
-section.ad-types-section aside .enquire-button {
+section.ad-types-section .enquire-button {
     /*font-weight: 700;*/
-
+    /*background-color: #777;*/
+    /*margin: 40px 0 20px 0;*/
+    /*display: block;*/
 
 }
+
+section.ad-types-section aside .extramargintop {
+ margin-top: 72px;
+}
+
 section.ad-types-section > h1 {
     text-align: center;
+    margin-bottom: 20px;
+    color: #000;
+    font-size: 70px;
 }
+
+section.ad-types-section > h5 {
+    text-align: center;
+    font-weight: 400;
+    color: #000;
+}
+
+section.ad-types-section > .l1 {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+section.ad-types-section > .l2 {
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
 
 section.ad-types-section .content {
     margin: 30px;
     background: no-repeat center top;
-    -webkit-background-size: 75px 75px;
-    background-size: 75px 75px;
-    padding-top: 85px;
+    -webkit-background-size: 350px 350px;
+    background-size: 350px 350px;
+    padding-top: 385px;
 }
 
 
 
 section.ad-types-section .content p {
 
-    text-align:center;
+    text-align: justify;
+    margin-bottom: 5px;
+    font-weight:700;
 }
 
 
@@ -176,20 +212,21 @@ section.ad-types-section a:hover {
 }
 
 section.ad-types-section aside .content.trending {
-    background-image: url(../images/icon_star.svg);
+    background-image: url(../images/classified.jpg);
 }
 
 section.ad-types-section aside .content.find-it {
-    background-image: url(../images/icon_marker.svg);
+    background-image: url(../images/classified-display.jpg);
 }
 
 section.ad-types-section aside .content.tools {
-    background-image: url(../images/icon_gear.svg);
+    background-image: url(../images/display.jpg);
 }
 
 section.who-we-are-section {
-    background-color: #cc6633; padding-top: 40px;
-    padding-bottom:30px; color: #fff;
+    background-color: #eee;
+    padding: 40px 50px 30px 50px;
+    color: #000;
     padding-left: 50px;
     padding-right: 50px;
 }
@@ -199,14 +236,31 @@ section.who-we-are-section article {
 
 }
 
-/*section.who-we-are-section article p {
-    text-align: justify;
+section.who-we-are-section article h2 {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 33px;
+    margin-top: 0px;
+    line-height: 25px;
+    margin-bottom: 0px;
+    color: #2b2a28;
+    margin-bottom: 50px;
+}
 
-}*/
+section.who-we-are-section article p {
+    line-height: 25px;
+    color: #101010;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0 0 0 70px;
+    margin-bottom: 5px;
+
+}
 
 section.who-we-are-section > article span.quote {
-    color: #444;
-    background-color: #fff;
+    color: #000;
+    background-color: #eee;
     padding: 55px 30px;
     line-height: 10em;
     font-weight: 700;
@@ -233,22 +287,24 @@ section.newspapers-section .collapse-all{
     letter-spacing: 0.1em;
     position: relative;
     bottom: 7px;
-    background-color: none;
 }
 
 section.newspapers-section h1 {
-    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 33px;
+    margin-top: 0px;
+    line-height: 25px;
+    margin-bottom: 0px;
+    color: #2b2a28;
+    margin-bottom: 50px;
 }
 
 
 
 section.newspapers-section div.dailies{
-    margin-top: 30px;
-
-}
-
-section.newspapers-section div.dailies{
-    margin-top: 30px;
+    margin-top: 0;
 
 }
 
@@ -313,8 +369,8 @@ section.newspapers-section div.dailies .content ul.list {
 section.newspapers-section div.dailies .content ul.list li {
 
     float: left;
-    list-style: outside none none;
-    margin-bottom: 20px;
+    list-style: square outside none;
+    margin-bottom: 10px;
     min-width: 300px;
 
 }
@@ -322,15 +378,15 @@ section.newspapers-section div.dailies .content ul.list li {
 section.newspapers-section div.dailies .content ul.list li a {
     display: inline-block;
     /*color: #cc6633;*/
-    color: #555;
+    color: #000;
     font-weight: 700;
     font-size: 0.8em;
     letter-spacing: 0.16em;
 }
 
 .ad-categories-section {
-    background-color: #cc6633;
-    color: #fff;
+    background-color: #eee9d9;
+    color: #000;
     padding-top: 40px;
     text-align: left;
     padding-bottom: 15px;
@@ -347,11 +403,16 @@ section.newspapers-section div.dailies .content ul.list li a {
 
 }
 
-.ad-categories-section div.categories h2 {
-    font-size: 1.6em;
+.ad-categories-section h2 {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 33px;
+    margin-top: 0px;
+    line-height: 25px;
     margin-bottom: 0px;
-    padding-left: 20px;
-    text-align: center;
+    color: #2b2a28;
+    margin-bottom: 30px;
 }
 
 .ad-categories-section div.categories .content {
@@ -367,8 +428,8 @@ section.newspapers-section div.dailies .content ul.list li a {
 .ad-categories-section div.categories .content ul.list li {
 
     float: left;
-    list-style: outside none none;
-    margin-bottom: 20px;
+    list-style: square outside none;
+    margin-bottom: 10px;
     min-width: 300px;
 
 }
@@ -376,7 +437,7 @@ section.newspapers-section div.dailies .content ul.list li a {
 .ad-categories-section div.categories .content ul.list li a {
     display: inline-block;
     /*color: #cc6633;*/
-    color: #fff;
+    color: #000;
     font-weight: 700;
     font-size: 0.9em;
     letter-spacing: 0.16em;
@@ -385,12 +446,14 @@ section.newspapers-section div.dailies .content ul.list li a {
 
     /* Nav */
 nav {
-    background-color: rgba(0,0,0,.75);
+    background-color: #fff;
     position: absolute;
     top: 0;
     right: 0;
-    padding: 29px 0 0 0;
     width: 100%;
+    height: 87px;
+    line-height: 87px;
+    vertical-align: middle;
 }
 
 nav::after {
@@ -409,14 +472,24 @@ nav ul li:hover { background-color: #2b0306; }
 
 nav ul li a {
     display: inline-block;
-    color: #fff;
-    padding: 10px 20px;
+    color: #000;
+    padding: 0px 10px;
     text-decoration: none;
     width: 125px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
-nav ul li a:visited { color:#fff; }
-nav ul li a:hover { background-color: #6d0911; }
+nav ul li a:visited { color:#000; }
+nav ul li a:hover {
+    background: #333;
+    color: #fff;
+    font-weight: normal;
+    text-decoration: none;
+    border-color: #fff;
+}
 
 /* top level nav */
 nav > ul { padding-left: 400px;}
@@ -428,7 +501,7 @@ nav > ul > li { float: right; text-align: center;  }
 
 footer {
     font-size: .8em; padding: 30px; color: #111; text-align: center;
-    background-color: #e2e1de; letter-spacing: 0.1em;
+    background-color: #fff; letter-spacing: 0.1em;
 }
 footer .content { display: inline; }
 
@@ -442,7 +515,7 @@ footer a:hover { color: #000; text-decoration: underline}
 
 .privacy-policy {
     position: fixed;
-    z-index: 2;
+    z-index: 4;
     top: 10%;
     left: 20%;
     width: 60%;
@@ -452,7 +525,7 @@ footer a:hover { color: #000; text-decoration: underline}
 }
 
 .privacy-policy .header-row {
-    background-color: #eee9d9;
+    /*background-color: #eee9d9;*/
     height: 35px;
 }
 
@@ -481,7 +554,7 @@ footer a:hover { color: #000; text-decoration: underline}
 
 .enquire-now-dialog {
     position: fixed;
-    z-index: 3;
+    z-index: 5;
     top: 50%;
     left: 50%;
     margin-left: -350px;
@@ -493,7 +566,7 @@ footer a:hover { color: #000; text-decoration: underline}
 }
 
 .enquire-now-dialog .header-row {
-    background-color: #eee9d9;
+    /*background-color: #eee9d9;*/
     height: 35px;
 }
 
@@ -559,16 +632,26 @@ footer a:hover { color: #000; text-decoration: underline}
     font-size: 1.4em;
     font-weight: 700;
     color: #000;
-    letter-spacing: 0.445em;
-    text-transform: lowercase;
+    /*letter-spacing: 0.445em;*/
+    /*text-transform: lowercase;*/
     line-height: 2em;
     text-align: center;
 }
 
 #enquire-fixed {
     position: fixed;
-    right: -50px;
+    right: -75px;
     top: 50%;
     transform: rotate(270deg);
-    font-weight: 700;
+
+}
+
+#screenblocker {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.5);
+    z-index: 3;
 }
