@@ -1,3 +1,4 @@
 ./vcs.xml
-./.idea
+.idea
 .idea/workspace.xml
+.idea/*
